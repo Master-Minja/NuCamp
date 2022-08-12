@@ -1,0 +1,797 @@
+0 verbose cli [
+0 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+0 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install',
+0 verbose cli   '-g',
+0 verbose cli   'json-server'
+0 verbose cli ]
+1 info using npm@8.1.2
+2 info using node@v16.13.2
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:C:\Users\andre\.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:C:\Program Files\nodejs\etc\npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 1ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 11ms
+18 timing npm:load:configload Completed in 12ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing npm:load:setupLog Completed in 0ms
+21 timing config:load:flatten Completed in 3ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 0ms
+25 timing npm:load Completed in 18ms
+26 timing arborist:ctor Completed in 0ms
+27 timing idealTree:init Completed in 5ms
+28 timing idealTree:userRequests Completed in 3ms
+29 silly idealTree buildDeps
+30 silly fetch manifest json-server@*
+31 http fetch GET 200 https://registry.npmjs.org/json-server 160ms (cache miss)
+32 silly placeDep ROOT json-server@0.17.0 OK for:  want: *
+33 silly fetch manifest body-parser@^1.19.0
+34 silly fetch manifest chalk@^4.1.2
+35 silly fetch manifest compression@^1.7.4
+36 silly fetch manifest connect-pause@^0.1.1
+37 silly fetch manifest cors@^2.8.5
+38 silly fetch manifest errorhandler@^1.5.1
+39 silly fetch manifest express@^4.17.1
+40 silly fetch manifest express-urlrewrite@^1.4.0
+41 silly fetch manifest json-parse-helpfulerror@^1.0.3
+42 silly fetch manifest lodash@^4.17.21
+43 silly fetch manifest lodash-id@^0.14.1
+44 silly fetch manifest lowdb@^1.0.0
+45 silly fetch manifest method-override@^3.0.0
+46 silly fetch manifest morgan@^1.10.0
+47 silly fetch manifest nanoid@^3.1.23
+48 silly fetch manifest please-upgrade-node@^3.2.0
+49 silly fetch manifest pluralize@^8.0.0
+50 silly fetch manifest server-destroy@^1.0.1
+51 silly fetch manifest update-notifier@^5.1.0
+52 silly fetch manifest yargs@^17.0.1
+53 http fetch GET 200 https://registry.npmjs.org/connect-pause 70ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/lodash-id 114ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/morgan 115ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/cors 127ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/lowdb 139ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/errorhandler 150ms (cache revalidated)
+59 http fetch GET 200 https://registry.npmjs.org/compression 156ms (cache revalidated)
+60 http fetch GET 200 https://registry.npmjs.org/please-upgrade-node 159ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/json-parse-helpfulerror 163ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/update-notifier 159ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/chalk 166ms (cache updated)
+64 http fetch GET 200 https://registry.npmjs.org/method-override 163ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/body-parser 169ms (cache updated)
+66 http fetch GET 200 https://registry.npmjs.org/pluralize 167ms (cache revalidated)
+67 http fetch GET 200 https://registry.npmjs.org/lodash 171ms (cache updated)
+68 http fetch GET 200 https://registry.npmjs.org/express 174ms (cache updated)
+69 http fetch GET 200 https://registry.npmjs.org/nanoid 175ms (cache revalidated)
+70 http fetch GET 200 https://registry.npmjs.org/yargs 178ms (cache updated)
+71 http fetch GET 200 https://registry.npmjs.org/server-destroy 184ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/express-urlrewrite 242ms (cache miss)
+73 timing idealTree:#root Completed in 417ms
+74 silly placeDep node_modules/json-server body-parser@1.20.0 OK for: json-server@0.17.0 want: ^1.19.0
+75 silly placeDep node_modules/json-server chalk@4.1.2 OK for: json-server@0.17.0 want: ^4.1.2
+76 silly placeDep node_modules/json-server compression@1.7.4 OK for: json-server@0.17.0 want: ^1.7.4
+77 silly placeDep node_modules/json-server connect-pause@0.1.1 OK for: json-server@0.17.0 want: ^0.1.1
+78 silly placeDep node_modules/json-server cors@2.8.5 OK for: json-server@0.17.0 want: ^2.8.5
+79 silly placeDep node_modules/json-server errorhandler@1.5.1 OK for: json-server@0.17.0 want: ^1.5.1
+80 silly placeDep node_modules/json-server express@4.18.1 OK for: json-server@0.17.0 want: ^4.17.1
+81 silly placeDep node_modules/json-server express-urlrewrite@1.4.0 OK for: json-server@0.17.0 want: ^1.4.0
+82 silly placeDep node_modules/json-server json-parse-helpfulerror@1.0.3 OK for: json-server@0.17.0 want: ^1.0.3
+83 silly placeDep node_modules/json-server lodash@4.17.21 OK for: json-server@0.17.0 want: ^4.17.21
+84 silly placeDep node_modules/json-server lodash-id@0.14.1 OK for: json-server@0.17.0 want: ^0.14.1
+85 silly placeDep node_modules/json-server lowdb@1.0.0 OK for: json-server@0.17.0 want: ^1.0.0
+86 silly placeDep node_modules/json-server method-override@3.0.0 OK for: json-server@0.17.0 want: ^3.0.0
+87 silly placeDep node_modules/json-server morgan@1.10.0 OK for: json-server@0.17.0 want: ^1.10.0
+88 silly placeDep node_modules/json-server nanoid@3.3.4 OK for: json-server@0.17.0 want: ^3.1.23
+89 silly placeDep node_modules/json-server please-upgrade-node@3.2.0 OK for: json-server@0.17.0 want: ^3.2.0
+90 silly placeDep node_modules/json-server pluralize@8.0.0 OK for: json-server@0.17.0 want: ^8.0.0
+91 silly placeDep node_modules/json-server server-destroy@1.0.1 OK for: json-server@0.17.0 want: ^1.0.1
+92 silly placeDep node_modules/json-server update-notifier@5.1.0 OK for: json-server@0.17.0 want: ^5.1.0
+93 silly placeDep node_modules/json-server yargs@17.5.1 OK for: json-server@0.17.0 want: ^17.0.1
+94 silly fetch manifest bytes@3.1.2
+95 silly fetch manifest content-type@~1.0.4
+96 silly fetch manifest debug@2.6.9
+97 silly fetch manifest depd@2.0.0
+98 silly fetch manifest destroy@1.2.0
+99 silly fetch manifest http-errors@2.0.0
+100 silly fetch manifest iconv-lite@0.4.24
+101 silly fetch manifest on-finished@2.4.1
+102 silly fetch manifest qs@6.10.3
+103 silly fetch manifest raw-body@2.5.1
+104 silly fetch manifest type-is@~1.6.18
+105 silly fetch manifest unpipe@1.0.0
+106 silly fetch manifest ansi-styles@^4.1.0
+107 silly fetch manifest supports-color@^7.1.0
+108 silly fetch manifest accepts@~1.3.5
+109 silly fetch manifest bytes@3.0.0
+110 silly fetch manifest compressible@~2.0.16
+111 silly fetch manifest on-headers@~1.0.2
+112 silly fetch manifest safe-buffer@5.1.2
+113 silly fetch manifest vary@~1.1.2
+114 silly fetch manifest object-assign@^4
+115 silly fetch manifest vary@^1
+116 silly fetch manifest accepts@~1.3.7
+117 silly fetch manifest escape-html@~1.0.3
+118 silly fetch manifest accepts@~1.3.8
+119 silly fetch manifest array-flatten@1.1.1
+120 silly fetch manifest content-disposition@0.5.4
+121 silly fetch manifest cookie@0.5.0
+122 silly fetch manifest cookie-signature@1.0.6
+123 silly fetch manifest encodeurl@~1.0.2
+124 silly fetch manifest etag@~1.8.1
+125 silly fetch manifest finalhandler@1.2.0
+126 silly fetch manifest fresh@0.5.2
+127 silly fetch manifest merge-descriptors@1.0.1
+128 silly fetch manifest methods@~1.1.2
+129 silly fetch manifest parseurl@~1.3.3
+130 silly fetch manifest path-to-regexp@0.1.7
+131 silly fetch manifest proxy-addr@~2.0.7
+132 silly fetch manifest range-parser@~1.2.1
+133 silly fetch manifest safe-buffer@5.2.1
+134 silly fetch manifest send@0.18.0
+135 silly fetch manifest serve-static@1.15.0
+136 silly fetch manifest setprototypeof@1.2.0
+137 silly fetch manifest statuses@2.0.1
+138 silly fetch manifest utils-merge@1.0.1
+139 silly fetch manifest debug@*
+140 silly fetch manifest path-to-regexp@^1.0.3
+141 silly fetch manifest jju@^1.1.0
+142 silly fetch manifest graceful-fs@^4.1.3
+143 silly fetch manifest is-promise@^2.1.0
+144 silly fetch manifest pify@^3.0.0
+145 silly fetch manifest steno@^0.4.1
+146 silly fetch manifest debug@3.1.0
+147 silly fetch manifest parseurl@~1.3.2
+148 silly fetch manifest basic-auth@~2.0.1
+149 silly fetch manifest depd@~2.0.0
+150 silly fetch manifest on-finished@~2.3.0
+151 silly fetch manifest semver-compare@^1.0.0
+152 silly fetch manifest boxen@^5.0.0
+153 silly fetch manifest configstore@^5.0.1
+154 silly fetch manifest has-yarn@^2.1.0
+155 silly fetch manifest import-lazy@^2.1.0
+156 silly fetch manifest is-ci@^2.0.0
+157 silly fetch manifest is-installed-globally@^0.4.0
+158 silly fetch manifest is-npm@^5.0.0
+159 silly fetch manifest is-yarn-global@^0.3.0
+160 silly fetch manifest latest-version@^5.1.0
+161 silly fetch manifest pupa@^2.1.1
+162 silly fetch manifest semver@^7.3.4
+163 silly fetch manifest semver-diff@^3.1.1
+164 silly fetch manifest xdg-basedir@^4.0.0
+165 silly fetch manifest cliui@^7.0.2
+166 silly fetch manifest escalade@^3.1.1
+167 silly fetch manifest get-caller-file@^2.0.5
+168 silly fetch manifest require-directory@^2.1.1
+169 silly fetch manifest string-width@^4.2.3
+170 silly fetch manifest y18n@^5.0.5
+171 silly fetch manifest yargs-parser@^21.0.0
+172 http fetch GET 200 https://registry.npmjs.org/has-yarn 211ms (cache miss)
+173 http fetch GET 200 https://registry.npmjs.org/is-installed-globally 210ms (cache miss)
+174 http fetch GET 200 https://registry.npmjs.org/is-yarn-global 212ms (cache miss)
+175 http fetch GET 200 https://registry.npmjs.org/semver-compare 218ms (cache miss)
+176 http fetch GET 200 https://registry.npmjs.org/jju 223ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/configstore 218ms (cache miss)
+178 http fetch GET 200 https://registry.npmjs.org/xdg-basedir 214ms (cache miss)
+179 http fetch GET 200 https://registry.npmjs.org/is-ci 220ms (cache miss)
+180 http fetch GET 200 https://registry.npmjs.org/semver-diff 217ms (cache miss)
+181 http fetch GET 200 https://registry.npmjs.org/boxen 223ms (cache miss)
+182 http fetch GET 200 https://registry.npmjs.org/is-npm 223ms (cache miss)
+183 http fetch GET 200 https://registry.npmjs.org/pupa 222ms (cache miss)
+184 http fetch GET 200 https://registry.npmjs.org/import-lazy 229ms (cache miss)
+185 http fetch GET 200 https://registry.npmjs.org/type-is 257ms (cache revalidated)
+186 http fetch GET 200 https://registry.npmjs.org/bytes 264ms (cache revalidated)
+187 http fetch GET 200 https://registry.npmjs.org/raw-body 260ms (cache revalidated)
+188 http fetch GET 200 https://registry.npmjs.org/destroy 264ms (cache revalidated)
+189 http fetch GET 200 https://registry.npmjs.org/accepts 257ms (cache revalidated)
+190 http fetch GET 200 https://registry.npmjs.org/on-headers 256ms (cache revalidated)
+191 http fetch GET 200 https://registry.npmjs.org/qs 262ms (cache revalidated)
+192 http fetch GET 200 https://registry.npmjs.org/iconv-lite 265ms (cache revalidated)
+193 http fetch GET 200 https://registry.npmjs.org/http-errors 267ms (cache revalidated)
+194 http fetch GET 200 https://registry.npmjs.org/content-type 270ms (cache revalidated)
+195 http fetch GET 200 https://registry.npmjs.org/depd 269ms (cache revalidated)
+196 http fetch GET 200 https://registry.npmjs.org/supports-color 263ms (cache revalidated)
+197 http fetch GET 200 https://registry.npmjs.org/unpipe 265ms (cache revalidated)
+198 http fetch GET 200 https://registry.npmjs.org/ansi-styles 266ms (cache revalidated)
+199 http fetch GET 200 https://registry.npmjs.org/on-finished 271ms (cache revalidated)
+200 http fetch GET 200 https://registry.npmjs.org/safe-buffer 264ms (cache revalidated)
+201 http fetch GET 200 https://registry.npmjs.org/basic-auth 254ms (cache miss)
+202 http fetch GET 200 https://registry.npmjs.org/array-flatten 271ms (cache revalidated)
+203 http fetch GET 200 https://registry.npmjs.org/steno 264ms (cache miss)
+204 http fetch GET 200 https://registry.npmjs.org/compressible 284ms (cache revalidated)
+205 http fetch GET 200 https://registry.npmjs.org/cookie-signature 280ms (cache revalidated)
+206 http fetch GET 200 https://registry.npmjs.org/latest-version 263ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/content-disposition 285ms (cache revalidated)
+208 http fetch GET 200 https://registry.npmjs.org/escape-html 293ms (cache revalidated)
+209 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 287ms (cache revalidated)
+210 http fetch GET 200 https://registry.npmjs.org/vary 298ms (cache revalidated)
+211 http fetch GET 200 https://registry.npmjs.org/object-assign 298ms (cache revalidated)
+212 http fetch GET 200 https://registry.npmjs.org/etag 295ms (cache revalidated)
+213 http fetch GET 200 https://registry.npmjs.org/cookie 297ms (cache revalidated)
+214 http fetch GET 200 https://registry.npmjs.org/merge-descriptors 294ms (cache revalidated)
+215 http fetch GET 200 https://registry.npmjs.org/debug 312ms (cache updated)
+216 http fetch GET 200 https://registry.npmjs.org/finalhandler 302ms (cache revalidated)
+217 http fetch GET 200 https://registry.npmjs.org/methods 302ms (cache revalidated)
+218 http fetch GET 200 https://registry.npmjs.org/encodeurl 309ms (cache revalidated)
+219 http fetch GET 200 https://registry.npmjs.org/parseurl 307ms (cache revalidated)
+220 http fetch GET 200 https://registry.npmjs.org/setprototypeof 302ms (cache revalidated)
+221 http fetch GET 200 https://registry.npmjs.org/range-parser 303ms (cache revalidated)
+222 http fetch GET 200 https://registry.npmjs.org/fresh 310ms (cache revalidated)
+223 http fetch GET 200 https://registry.npmjs.org/proxy-addr 306ms (cache revalidated)
+224 http fetch GET 200 https://registry.npmjs.org/statuses 303ms (cache revalidated)
+225 http fetch GET 200 https://registry.npmjs.org/utils-merge 303ms (cache revalidated)
+226 http fetch GET 200 https://registry.npmjs.org/graceful-fs 302ms (cache revalidated)
+227 http fetch GET 200 https://registry.npmjs.org/serve-static 305ms (cache revalidated)
+228 http fetch GET 200 https://registry.npmjs.org/pify 302ms (cache revalidated)
+229 http fetch GET 200 https://registry.npmjs.org/send 308ms (cache revalidated)
+230 http fetch GET 200 https://registry.npmjs.org/cliui 293ms (cache revalidated)
+231 http fetch GET 200 https://registry.npmjs.org/is-promise 305ms (cache revalidated)
+232 http fetch GET 200 https://registry.npmjs.org/string-width 292ms (cache revalidated)
+233 http fetch GET 200 https://registry.npmjs.org/escalade 295ms (cache revalidated)
+234 http fetch GET 200 https://registry.npmjs.org/y18n 293ms (cache revalidated)
+235 http fetch GET 200 https://registry.npmjs.org/semver 298ms (cache updated)
+236 http fetch GET 200 https://registry.npmjs.org/require-directory 296ms (cache revalidated)
+237 http fetch GET 200 https://registry.npmjs.org/get-caller-file 297ms (cache revalidated)
+238 http fetch GET 200 https://registry.npmjs.org/yargs-parser 296ms (cache updated)
+239 timing idealTree:node_modules/json-server Completed in 361ms
+240 silly placeDep node_modules/json-server bytes@3.1.2 OK for: body-parser@1.20.0 want: 3.1.2
+241 silly placeDep node_modules/json-server content-type@1.0.4 OK for: body-parser@1.20.0 want: ~1.0.4
+242 silly placeDep node_modules/json-server debug@2.6.9 OK for: body-parser@1.20.0 want: 2.6.9
+243 silly placeDep node_modules/json-server depd@2.0.0 OK for: body-parser@1.20.0 want: 2.0.0
+244 silly placeDep node_modules/json-server destroy@1.2.0 OK for: body-parser@1.20.0 want: 1.2.0
+245 silly placeDep node_modules/json-server http-errors@2.0.0 OK for: body-parser@1.20.0 want: 2.0.0
+246 silly placeDep node_modules/json-server iconv-lite@0.4.24 OK for: body-parser@1.20.0 want: 0.4.24
+247 silly placeDep node_modules/json-server on-finished@2.4.1 OK for: body-parser@1.20.0 want: 2.4.1
+248 silly placeDep node_modules/json-server qs@6.10.3 OK for: body-parser@1.20.0 want: 6.10.3
+249 silly placeDep node_modules/json-server raw-body@2.5.1 OK for: body-parser@1.20.0 want: 2.5.1
+250 silly placeDep node_modules/json-server type-is@1.6.18 OK for: body-parser@1.20.0 want: ~1.6.18
+251 silly placeDep node_modules/json-server unpipe@1.0.0 OK for: body-parser@1.20.0 want: 1.0.0
+252 silly fetch manifest ms@2.0.0
+253 silly fetch manifest inherits@2.0.4
+254 silly fetch manifest toidentifier@1.0.1
+255 silly fetch manifest safer-buffer@>= 2.1.2 < 3
+256 silly fetch manifest ee-first@1.1.1
+257 silly fetch manifest side-channel@^1.0.4
+258 silly fetch manifest media-typer@0.3.0
+259 silly fetch manifest mime-types@~2.1.24
+260 http fetch GET 200 https://registry.npmjs.org/ee-first 54ms (cache revalidated)
+261 http fetch GET 200 https://registry.npmjs.org/inherits 57ms (cache revalidated)
+262 http fetch GET 200 https://registry.npmjs.org/toidentifier 56ms (cache revalidated)
+263 http fetch GET 200 https://registry.npmjs.org/side-channel 59ms (cache revalidated)
+264 http fetch GET 200 https://registry.npmjs.org/ms 68ms (cache updated)
+265 http fetch GET 200 https://registry.npmjs.org/media-typer 72ms (cache revalidated)
+266 http fetch GET 200 https://registry.npmjs.org/mime-types 73ms (cache revalidated)
+267 http fetch GET 200 https://registry.npmjs.org/safer-buffer 102ms (cache revalidated)
+268 timing idealTree:node_modules/json-server/node_modules/body-parser Completed in 115ms
+269 timing idealTree:node_modules/json-server/node_modules/bytes Completed in 0ms
+270 silly placeDep node_modules/json-server ansi-styles@4.3.0 OK for: chalk@4.1.2 want: ^4.1.0
+271 silly placeDep node_modules/json-server supports-color@7.2.0 OK for: chalk@4.1.2 want: ^7.1.0
+272 silly fetch manifest color-convert@^2.0.1
+273 silly fetch manifest has-flag@^4.0.0
+274 http fetch GET 200 https://registry.npmjs.org/has-flag 37ms (cache revalidated)
+275 http fetch GET 200 https://registry.npmjs.org/color-convert 47ms (cache revalidated)
+276 timing idealTree:node_modules/json-server/node_modules/chalk Completed in 49ms
+277 silly placeDep node_modules/json-server color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+278 silly fetch manifest color-name@~1.1.4
+279 http fetch GET 200 https://registry.npmjs.org/color-name 55ms (cache revalidated)
+280 timing idealTree:node_modules/json-server/node_modules/ansi-styles Completed in 57ms
+281 silly placeDep node_modules/json-server color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+282 timing idealTree:node_modules/json-server/node_modules/color-convert Completed in 1ms
+283 timing idealTree:node_modules/json-server/node_modules/color-name Completed in 0ms
+284 silly placeDep node_modules/json-server accepts@1.3.8 OK for: compression@1.7.4 want: ~1.3.5
+285 silly placeDep node_modules/json-server/node_modules/compression bytes@3.0.0 OK for: compression@1.7.4 want: 3.0.0
+286 silly placeDep node_modules/json-server compressible@2.0.18 OK for: compression@1.7.4 want: ~2.0.16
+287 silly placeDep node_modules/json-server on-headers@1.0.2 OK for: compression@1.7.4 want: ~1.0.2
+288 silly placeDep node_modules/json-server safe-buffer@5.1.2 OK for: compression@1.7.4 want: 5.1.2
+289 silly placeDep node_modules/json-server vary@1.1.2 OK for: compression@1.7.4 want: ~1.1.2
+290 silly fetch manifest mime-types@~2.1.34
+291 silly fetch manifest negotiator@0.6.3
+292 silly fetch manifest mime-db@>= 1.43.0 < 2
+293 http fetch GET 200 https://registry.npmjs.org/negotiator 43ms (cache revalidated)
+294 http fetch GET 200 https://registry.npmjs.org/mime-db 45ms (cache revalidated)
+295 timing idealTree:node_modules/json-server/node_modules/compression Completed in 52ms
+296 silly placeDep node_modules/json-server mime-types@2.1.35 OK for: accepts@1.3.8 want: ~2.1.34
+297 silly placeDep node_modules/json-server negotiator@0.6.3 OK for: accepts@1.3.8 want: 0.6.3
+298 silly fetch manifest mime-db@1.52.0
+299 timing idealTree:node_modules/json-server/node_modules/accepts Completed in 2ms
+300 silly placeDep node_modules/json-server mime-db@1.52.0 OK for: compressible@2.0.18 want: >= 1.43.0 < 2
+301 timing idealTree:node_modules/json-server/node_modules/compressible Completed in 1ms
+302 timing idealTree:node_modules/json-server/node_modules/connect-pause Completed in 0ms
+303 timing idealTree:node_modules/json-server/node_modules/content-type Completed in 0ms
+304 silly placeDep node_modules/json-server object-assign@4.1.1 OK for: cors@2.8.5 want: ^4
+305 timing idealTree:node_modules/json-server/node_modules/cors Completed in 1ms
+306 silly placeDep node_modules/json-server ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+307 timing idealTree:node_modules/json-server/node_modules/debug Completed in 1ms
+308 timing idealTree:node_modules/json-server/node_modules/depd Completed in 0ms
+309 timing idealTree:node_modules/json-server/node_modules/destroy Completed in 0ms
+310 silly placeDep node_modules/json-server escape-html@1.0.3 OK for: errorhandler@1.5.1 want: ~1.0.3
+311 timing idealTree:node_modules/json-server/node_modules/errorhandler Completed in 1ms
+312 timing idealTree:node_modules/json-server/node_modules/escape-html Completed in 0ms
+313 silly placeDep node_modules/json-server array-flatten@1.1.1 OK for: express@4.18.1 want: 1.1.1
+314 silly placeDep node_modules/json-server content-disposition@0.5.4 OK for: express@4.18.1 want: 0.5.4
+315 silly placeDep node_modules/json-server cookie@0.5.0 OK for: express@4.18.1 want: 0.5.0
+316 silly placeDep node_modules/json-server cookie-signature@1.0.6 OK for: express@4.18.1 want: 1.0.6
+317 silly placeDep node_modules/json-server encodeurl@1.0.2 OK for: express@4.18.1 want: ~1.0.2
+318 silly placeDep node_modules/json-server etag@1.8.1 OK for: express@4.18.1 want: ~1.8.1
+319 silly placeDep node_modules/json-server finalhandler@1.2.0 OK for: express@4.18.1 want: 1.2.0
+320 silly placeDep node_modules/json-server fresh@0.5.2 OK for: express@4.18.1 want: 0.5.2
+321 silly placeDep node_modules/json-server merge-descriptors@1.0.1 OK for: express@4.18.1 want: 1.0.1
+322 silly placeDep node_modules/json-server methods@1.1.2 OK for: express@4.18.1 want: ~1.1.2
+323 silly placeDep node_modules/json-server parseurl@1.3.3 OK for: express@4.18.1 want: ~1.3.3
+324 silly placeDep node_modules/json-server path-to-regexp@0.1.7 OK for: express@4.18.1 want: 0.1.7
+325 silly placeDep node_modules/json-server proxy-addr@2.0.7 OK for: express@4.18.1 want: ~2.0.7
+326 silly placeDep node_modules/json-server range-parser@1.2.1 OK for: express@4.18.1 want: ~1.2.1
+327 silly placeDep node_modules/json-server/node_modules/express safe-buffer@5.2.1 OK for: express@4.18.1 want: 5.2.1
+328 silly placeDep node_modules/json-server send@0.18.0 OK for: express@4.18.1 want: 0.18.0
+329 silly placeDep node_modules/json-server serve-static@1.15.0 OK for: express@4.18.1 want: 1.15.0
+330 silly placeDep node_modules/json-server setprototypeof@1.2.0 OK for: express@4.18.1 want: 1.2.0
+331 silly placeDep node_modules/json-server statuses@2.0.1 OK for: express@4.18.1 want: 2.0.1
+332 silly placeDep node_modules/json-server utils-merge@1.0.1 OK for: express@4.18.1 want: 1.0.1
+333 silly fetch manifest forwarded@0.2.0
+334 silly fetch manifest ipaddr.js@1.9.1
+335 silly fetch manifest mime@1.6.0
+336 silly fetch manifest ms@2.1.3
+337 http fetch GET 200 https://registry.npmjs.org/ipaddr.js 48ms (cache revalidated)
+338 http fetch GET 200 https://registry.npmjs.org/mime 52ms (cache revalidated)
+339 http fetch GET 200 https://registry.npmjs.org/forwarded 66ms (cache revalidated)
+340 timing idealTree:node_modules/json-server/node_modules/express Completed in 86ms
+341 timing idealTree:node_modules/json-server/node_modules/array-flatten Completed in 0ms
+342 silly placeDep node_modules/json-server/node_modules/content-disposition safe-buffer@5.2.1 OK for: content-disposition@0.5.4 want: 5.2.1
+343 timing idealTree:node_modules/json-server/node_modules/content-disposition Completed in 3ms
+344 timing idealTree:node_modules/json-server/node_modules/cookie Completed in 0ms
+345 timing idealTree:node_modules/json-server/node_modules/cookie-signature Completed in 0ms
+346 timing idealTree:node_modules/json-server/node_modules/encodeurl Completed in 0ms
+347 timing idealTree:node_modules/json-server/node_modules/etag Completed in 0ms
+348 silly placeDep node_modules/json-server/node_modules/express-urlrewrite path-to-regexp@1.8.0 OK for: express-urlrewrite@1.4.0 want: ^1.0.3
+349 silly fetch manifest isarray@0.0.1
+350 http fetch GET 200 https://registry.npmjs.org/isarray 48ms (cache revalidated)
+351 timing idealTree:node_modules/json-server/node_modules/express-urlrewrite Completed in 50ms
+352 timing idealTree:node_modules/json-server/node_modules/finalhandler Completed in 0ms
+353 timing idealTree:node_modules/json-server/node_modules/fresh Completed in 0ms
+354 silly placeDep node_modules/json-server inherits@2.0.4 OK for: http-errors@2.0.0 want: 2.0.4
+355 silly placeDep node_modules/json-server toidentifier@1.0.1 OK for: http-errors@2.0.0 want: 1.0.1
+356 timing idealTree:node_modules/json-server/node_modules/http-errors Completed in 1ms
+357 silly placeDep node_modules/json-server safer-buffer@2.1.2 OK for: iconv-lite@0.4.24 want: >= 2.1.2 < 3
+358 timing idealTree:node_modules/json-server/node_modules/iconv-lite Completed in 1ms
+359 timing idealTree:node_modules/json-server/node_modules/inherits Completed in 0ms
+360 silly placeDep node_modules/json-server jju@1.4.0 OK for: json-parse-helpfulerror@1.0.3 want: ^1.1.0
+361 timing idealTree:node_modules/json-server/node_modules/json-parse-helpfulerror Completed in 1ms
+362 timing idealTree:node_modules/json-server/node_modules/jju Completed in 0ms
+363 timing idealTree:node_modules/json-server/node_modules/lodash Completed in 0ms
+364 timing idealTree:node_modules/json-server/node_modules/lodash-id Completed in 0ms
+365 silly placeDep node_modules/json-server graceful-fs@4.2.10 OK for: lowdb@1.0.0 want: ^4.1.3
+366 silly placeDep node_modules/json-server is-promise@2.2.2 OK for: lowdb@1.0.0 want: ^2.1.0
+367 silly placeDep node_modules/json-server pify@3.0.0 OK for: lowdb@1.0.0 want: ^3.0.0
+368 silly placeDep node_modules/json-server steno@0.4.4 OK for: lowdb@1.0.0 want: ^0.4.1
+369 timing idealTree:node_modules/json-server/node_modules/lowdb Completed in 4ms
+370 timing idealTree:node_modules/json-server/node_modules/graceful-fs Completed in 0ms
+371 timing idealTree:node_modules/json-server/node_modules/is-promise Completed in 0ms
+372 timing idealTree:node_modules/json-server/node_modules/merge-descriptors Completed in 0ms
+373 silly placeDep node_modules/json-server/node_modules/method-override debug@3.1.0 OK for: method-override@3.0.0 want: 3.1.0
+374 timing idealTree:node_modules/json-server/node_modules/method-override Completed in 1ms
+375 timing idealTree:node_modules/json-server/node_modules/methods Completed in 0ms
+376 timing idealTree:node_modules/json-server/node_modules/mime-db Completed in 0ms
+377 timing idealTree:node_modules/json-server/node_modules/mime-types Completed in 0ms
+378 silly placeDep node_modules/json-server basic-auth@2.0.1 OK for: morgan@1.10.0 want: ~2.0.1
+379 silly placeDep node_modules/json-server/node_modules/morgan on-finished@2.3.0 OK for: morgan@1.10.0 want: ~2.3.0
+380 timing idealTree:node_modules/json-server/node_modules/morgan Completed in 1ms
+381 timing idealTree:node_modules/json-server/node_modules/basic-auth Completed in 0ms
+382 timing idealTree:node_modules/json-server/node_modules/ms Completed in 0ms
+383 timing idealTree:node_modules/json-server/node_modules/nanoid Completed in 0ms
+384 timing idealTree:node_modules/json-server/node_modules/negotiator Completed in 0ms
+385 timing idealTree:node_modules/json-server/node_modules/object-assign Completed in 0ms
+386 silly placeDep node_modules/json-server ee-first@1.1.1 OK for: on-finished@2.4.1 want: 1.1.1
+387 timing idealTree:node_modules/json-server/node_modules/on-finished Completed in 1ms
+388 timing idealTree:node_modules/json-server/node_modules/ee-first Completed in 0ms
+389 timing idealTree:node_modules/json-server/node_modules/on-headers Completed in 0ms
+390 timing idealTree:node_modules/json-server/node_modules/parseurl Completed in 0ms
+391 timing idealTree:node_modules/json-server/node_modules/path-to-regexp Completed in 0ms
+392 timing idealTree:node_modules/json-server/node_modules/pify Completed in 0ms
+393 silly placeDep node_modules/json-server semver-compare@1.0.0 OK for: please-upgrade-node@3.2.0 want: ^1.0.0
+394 timing idealTree:node_modules/json-server/node_modules/please-upgrade-node Completed in 0ms
+395 timing idealTree:node_modules/json-server/node_modules/pluralize Completed in 0ms
+396 silly placeDep node_modules/json-server forwarded@0.2.0 OK for: proxy-addr@2.0.7 want: 0.2.0
+397 silly placeDep node_modules/json-server ipaddr.js@1.9.1 OK for: proxy-addr@2.0.7 want: 1.9.1
+398 timing idealTree:node_modules/json-server/node_modules/proxy-addr Completed in 2ms
+399 timing idealTree:node_modules/json-server/node_modules/forwarded Completed in 0ms
+400 timing idealTree:node_modules/json-server/node_modules/ipaddr.js Completed in 0ms
+401 silly placeDep node_modules/json-server side-channel@1.0.4 OK for: qs@6.10.3 want: ^1.0.4
+402 silly fetch manifest call-bind@^1.0.0
+403 silly fetch manifest get-intrinsic@^1.0.2
+404 silly fetch manifest object-inspect@^1.9.0
+405 http fetch GET 200 https://registry.npmjs.org/call-bind 47ms (cache revalidated)
+406 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 48ms (cache revalidated)
+407 http fetch GET 200 https://registry.npmjs.org/object-inspect 49ms (cache revalidated)
+408 timing idealTree:node_modules/json-server/node_modules/qs Completed in 52ms
+409 timing idealTree:node_modules/json-server/node_modules/range-parser Completed in 0ms
+410 timing idealTree:node_modules/json-server/node_modules/raw-body Completed in 0ms
+411 timing idealTree:node_modules/json-server/node_modules/safe-buffer Completed in 0ms
+412 timing idealTree:node_modules/json-server/node_modules/safer-buffer Completed in 0ms
+413 timing idealTree:node_modules/json-server/node_modules/semver-compare Completed in 0ms
+414 silly placeDep node_modules/json-server mime@1.6.0 OK for: send@0.18.0 want: 1.6.0
+415 silly placeDep node_modules/json-server/node_modules/send ms@2.1.3 OK for: send@0.18.0 want: 2.1.3
+416 timing idealTree:node_modules/json-server/node_modules/send Completed in 1ms
+417 timing idealTree:node_modules/json-server/node_modules/mime Completed in 0ms
+418 timing idealTree:node_modules/json-server/node_modules/serve-static Completed in 0ms
+419 timing idealTree:node_modules/json-server/node_modules/server-destroy Completed in 0ms
+420 timing idealTree:node_modules/json-server/node_modules/setprototypeof Completed in 0ms
+421 silly placeDep node_modules/json-server call-bind@1.0.2 OK for: side-channel@1.0.4 want: ^1.0.0
+422 silly placeDep node_modules/json-server get-intrinsic@1.1.2 OK for: side-channel@1.0.4 want: ^1.0.2
+423 silly placeDep node_modules/json-server object-inspect@1.12.2 OK for: side-channel@1.0.4 want: ^1.9.0
+424 silly fetch manifest function-bind@^1.1.1
+425 silly fetch manifest has@^1.0.3
+426 silly fetch manifest has-symbols@^1.0.3
+427 http fetch GET 200 https://registry.npmjs.org/has 54ms (cache revalidated)
+428 http fetch GET 200 https://registry.npmjs.org/has-symbols 54ms (cache revalidated)
+429 http fetch GET 200 https://registry.npmjs.org/function-bind 59ms (cache revalidated)
+430 timing idealTree:node_modules/json-server/node_modules/side-channel Completed in 61ms
+431 silly placeDep node_modules/json-server function-bind@1.1.1 OK for: call-bind@1.0.2 want: ^1.1.1
+432 timing idealTree:node_modules/json-server/node_modules/call-bind Completed in 1ms
+433 timing idealTree:node_modules/json-server/node_modules/function-bind Completed in 0ms
+434 silly placeDep node_modules/json-server has@1.0.3 OK for: get-intrinsic@1.1.2 want: ^1.0.3
+435 silly placeDep node_modules/json-server has-symbols@1.0.3 OK for: get-intrinsic@1.1.2 want: ^1.0.3
+436 timing idealTree:node_modules/json-server/node_modules/get-intrinsic Completed in 2ms
+437 timing idealTree:node_modules/json-server/node_modules/has Completed in 0ms
+438 timing idealTree:node_modules/json-server/node_modules/has-symbols Completed in 0ms
+439 timing idealTree:node_modules/json-server/node_modules/object-inspect Completed in 0ms
+440 timing idealTree:node_modules/json-server/node_modules/statuses Completed in 0ms
+441 timing idealTree:node_modules/json-server/node_modules/steno Completed in 0ms
+442 silly placeDep node_modules/json-server has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+443 timing idealTree:node_modules/json-server/node_modules/supports-color Completed in 0ms
+444 timing idealTree:node_modules/json-server/node_modules/has-flag Completed in 0ms
+445 timing idealTree:node_modules/json-server/node_modules/toidentifier Completed in 0ms
+446 silly placeDep node_modules/json-server media-typer@0.3.0 OK for: type-is@1.6.18 want: 0.3.0
+447 timing idealTree:node_modules/json-server/node_modules/type-is Completed in 0ms
+448 timing idealTree:node_modules/json-server/node_modules/media-typer Completed in 0ms
+449 timing idealTree:node_modules/json-server/node_modules/unpipe Completed in 0ms
+450 silly placeDep node_modules/json-server boxen@5.1.2 OK for: update-notifier@5.1.0 want: ^5.0.0
+451 silly placeDep node_modules/json-server configstore@5.0.1 OK for: update-notifier@5.1.0 want: ^5.0.1
+452 silly placeDep node_modules/json-server has-yarn@2.1.0 OK for: update-notifier@5.1.0 want: ^2.1.0
+453 silly placeDep node_modules/json-server import-lazy@2.1.0 OK for: update-notifier@5.1.0 want: ^2.1.0
+454 silly placeDep node_modules/json-server is-ci@2.0.0 OK for: update-notifier@5.1.0 want: ^2.0.0
+455 silly placeDep node_modules/json-server is-installed-globally@0.4.0 OK for: update-notifier@5.1.0 want: ^0.4.0
+456 silly placeDep node_modules/json-server is-npm@5.0.0 OK for: update-notifier@5.1.0 want: ^5.0.0
+457 silly placeDep node_modules/json-server is-yarn-global@0.3.0 OK for: update-notifier@5.1.0 want: ^0.3.0
+458 silly placeDep node_modules/json-server latest-version@5.1.0 OK for: update-notifier@5.1.0 want: ^5.1.0
+459 silly placeDep node_modules/json-server pupa@2.1.1 OK for: update-notifier@5.1.0 want: ^2.1.1
+460 silly placeDep node_modules/json-server semver@7.3.7 OK for: update-notifier@5.1.0 want: ^7.3.4
+461 silly placeDep node_modules/json-server semver-diff@3.1.1 OK for: update-notifier@5.1.0 want: ^3.1.1
+462 silly placeDep node_modules/json-server xdg-basedir@4.0.0 OK for: update-notifier@5.1.0 want: ^4.0.0
+463 silly fetch manifest ansi-align@^3.0.0
+464 silly fetch manifest camelcase@^6.2.0
+465 silly fetch manifest cli-boxes@^2.2.1
+466 silly fetch manifest string-width@^4.2.2
+467 silly fetch manifest type-fest@^0.20.2
+468 silly fetch manifest widest-line@^3.1.0
+469 silly fetch manifest wrap-ansi@^7.0.0
+470 silly fetch manifest dot-prop@^5.2.0
+471 silly fetch manifest make-dir@^3.0.0
+472 silly fetch manifest unique-string@^2.0.0
+473 silly fetch manifest write-file-atomic@^3.0.0
+474 silly fetch manifest ci-info@^2.0.0
+475 silly fetch manifest global-dirs@^3.0.0
+476 silly fetch manifest is-path-inside@^3.0.2
+477 silly fetch manifest package-json@^6.3.0
+478 silly fetch manifest escape-goat@^2.0.0
+479 silly fetch manifest lru-cache@^6.0.0
+480 silly fetch manifest semver@^6.3.0
+481 http fetch GET 200 https://registry.npmjs.org/ansi-align 59ms (cache miss)
+482 http fetch GET 200 https://registry.npmjs.org/widest-line 58ms (cache miss)
+483 http fetch GET 200 https://registry.npmjs.org/cli-boxes 67ms (cache miss)
+484 http fetch GET 200 https://registry.npmjs.org/package-json 63ms (cache miss)
+485 http fetch GET 200 https://registry.npmjs.org/dot-prop 68ms (cache miss)
+486 http fetch GET 200 https://registry.npmjs.org/escape-goat 65ms (cache miss)
+487 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 70ms (cache revalidated)
+488 http fetch GET 200 https://registry.npmjs.org/ci-info 71ms (cache revalidated)
+489 http fetch GET 200 https://registry.npmjs.org/camelcase 77ms (cache revalidated)
+490 http fetch GET 200 https://registry.npmjs.org/unique-string 75ms (cache revalidated)
+491 http fetch GET 200 https://registry.npmjs.org/global-dirs 74ms (cache miss)
+492 http fetch GET 200 https://registry.npmjs.org/write-file-atomic 78ms (cache revalidated)
+493 http fetch GET 200 https://registry.npmjs.org/type-fest 87ms (cache updated)
+494 http fetch GET 200 https://registry.npmjs.org/is-path-inside 85ms (cache revalidated)
+495 http fetch GET 200 https://registry.npmjs.org/lru-cache 88ms (cache updated)
+496 http fetch GET 200 https://registry.npmjs.org/make-dir 137ms (cache revalidated)
+497 timing idealTree:node_modules/json-server/node_modules/update-notifier Completed in 153ms
+498 silly placeDep node_modules/json-server ansi-align@3.0.1 OK for: boxen@5.1.2 want: ^3.0.0
+499 silly placeDep node_modules/json-server camelcase@6.3.0 OK for: boxen@5.1.2 want: ^6.2.0
+500 silly placeDep node_modules/json-server cli-boxes@2.2.1 OK for: boxen@5.1.2 want: ^2.2.1
+501 silly placeDep node_modules/json-server string-width@4.2.3 OK for: boxen@5.1.2 want: ^4.2.2
+502 silly placeDep node_modules/json-server type-fest@0.20.2 OK for: boxen@5.1.2 want: ^0.20.2
+503 silly placeDep node_modules/json-server widest-line@3.1.0 OK for: boxen@5.1.2 want: ^3.1.0
+504 silly placeDep node_modules/json-server wrap-ansi@7.0.0 OK for: boxen@5.1.2 want: ^7.0.0
+505 silly fetch manifest emoji-regex@^8.0.0
+506 silly fetch manifest is-fullwidth-code-point@^3.0.0
+507 silly fetch manifest strip-ansi@^6.0.1
+508 silly fetch manifest strip-ansi@^6.0.0
+509 http fetch GET 200 https://registry.npmjs.org/emoji-regex 47ms (cache revalidated)
+510 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 53ms (cache revalidated)
+511 http fetch GET 200 https://registry.npmjs.org/strip-ansi 85ms (cache revalidated)
+512 timing idealTree:node_modules/json-server/node_modules/boxen Completed in 91ms
+513 timing idealTree:node_modules/json-server/node_modules/ansi-align Completed in 0ms
+514 timing idealTree:node_modules/json-server/node_modules/camelcase Completed in 0ms
+515 timing idealTree:node_modules/json-server/node_modules/cli-boxes Completed in 0ms
+516 silly placeDep node_modules/json-server dot-prop@5.3.0 OK for: configstore@5.0.1 want: ^5.2.0
+517 silly placeDep node_modules/json-server make-dir@3.1.0 OK for: configstore@5.0.1 want: ^3.0.0
+518 silly placeDep node_modules/json-server unique-string@2.0.0 OK for: configstore@5.0.1 want: ^2.0.0
+519 silly placeDep node_modules/json-server write-file-atomic@3.0.3 OK for: configstore@5.0.1 want: ^3.0.0
+520 silly fetch manifest is-obj@^2.0.0
+521 silly fetch manifest semver@^6.0.0
+522 silly fetch manifest crypto-random-string@^2.0.0
+523 silly fetch manifest imurmurhash@^0.1.4
+524 silly fetch manifest is-typedarray@^1.0.0
+525 silly fetch manifest signal-exit@^3.0.2
+526 silly fetch manifest typedarray-to-buffer@^3.1.5
+527 http fetch GET 200 https://registry.npmjs.org/signal-exit 43ms (cache revalidated)
+528 http fetch GET 200 https://registry.npmjs.org/is-obj 58ms (cache revalidated)
+529 http fetch GET 200 https://registry.npmjs.org/imurmurhash 63ms (cache revalidated)
+530 http fetch GET 200 https://registry.npmjs.org/typedarray-to-buffer 64ms (cache revalidated)
+531 http fetch GET 200 https://registry.npmjs.org/crypto-random-string 66ms (cache revalidated)
+532 http fetch GET 200 https://registry.npmjs.org/is-typedarray 118ms (cache revalidated)
+533 timing idealTree:node_modules/json-server/node_modules/configstore Completed in 123ms
+534 silly placeDep node_modules/json-server is-obj@2.0.0 OK for: dot-prop@5.3.0 want: ^2.0.0
+535 timing idealTree:node_modules/json-server/node_modules/dot-prop Completed in 2ms
+536 timing idealTree:node_modules/json-server/node_modules/has-yarn Completed in 0ms
+537 timing idealTree:node_modules/json-server/node_modules/import-lazy Completed in 0ms
+538 silly placeDep node_modules/json-server ci-info@2.0.0 OK for: is-ci@2.0.0 want: ^2.0.0
+539 timing idealTree:node_modules/json-server/node_modules/is-ci Completed in 1ms
+540 timing idealTree:node_modules/json-server/node_modules/ci-info Completed in 0ms
+541 silly placeDep node_modules/json-server global-dirs@3.0.0 OK for: is-installed-globally@0.4.0 want: ^3.0.0
+542 silly placeDep node_modules/json-server is-path-inside@3.0.3 OK for: is-installed-globally@0.4.0 want: ^3.0.2
+543 silly fetch manifest ini@2.0.0
+544 http fetch GET 200 https://registry.npmjs.org/ini 50ms (cache revalidated)
+545 timing idealTree:node_modules/json-server/node_modules/is-installed-globally Completed in 54ms
+546 silly placeDep node_modules/json-server ini@2.0.0 OK for: global-dirs@3.0.0 want: 2.0.0
+547 timing idealTree:node_modules/json-server/node_modules/global-dirs Completed in 1ms
+548 timing idealTree:node_modules/json-server/node_modules/ini Completed in 0ms
+549 timing idealTree:node_modules/json-server/node_modules/is-npm Completed in 0ms
+550 timing idealTree:node_modules/json-server/node_modules/is-obj Completed in 0ms
+551 timing idealTree:node_modules/json-server/node_modules/is-path-inside Completed in 0ms
+552 timing idealTree:node_modules/json-server/node_modules/is-yarn-global Completed in 0ms
+553 silly placeDep node_modules/json-server package-json@6.5.0 OK for: latest-version@5.1.0 want: ^6.3.0
+554 silly fetch manifest got@^9.6.0
+555 silly fetch manifest registry-auth-token@^4.0.0
+556 silly fetch manifest registry-url@^5.0.0
+557 silly fetch manifest semver@^6.2.0
+558 http fetch GET 200 https://registry.npmjs.org/registry-auth-token 50ms (cache miss)
+559 http fetch GET 200 https://registry.npmjs.org/registry-url 58ms (cache miss)
+560 http fetch GET 200 https://registry.npmjs.org/got 62ms (cache updated)
+561 timing idealTree:node_modules/json-server/node_modules/latest-version Completed in 66ms
+562 silly placeDep node_modules/json-server/node_modules/make-dir semver@6.3.0 OK for: make-dir@3.1.0 want: ^6.0.0
+563 timing idealTree:node_modules/json-server/node_modules/make-dir Completed in 1ms
+564 silly placeDep node_modules/json-server got@9.6.0 OK for: package-json@6.5.0 want: ^9.6.0
+565 silly placeDep node_modules/json-server registry-auth-token@4.2.2 OK for: package-json@6.5.0 want: ^4.0.0
+566 silly placeDep node_modules/json-server registry-url@5.1.0 OK for: package-json@6.5.0 want: ^5.0.0
+567 silly placeDep node_modules/json-server/node_modules/package-json semver@6.3.0 OK for: package-json@6.5.0 want: ^6.2.0
+568 silly fetch manifest @sindresorhus/is@^0.14.0
+569 silly fetch manifest @szmarczak/http-timer@^1.1.2
+570 silly fetch manifest cacheable-request@^6.0.0
+571 silly fetch manifest decompress-response@^3.3.0
+572 silly fetch manifest duplexer3@^0.1.4
+573 silly fetch manifest get-stream@^4.1.0
+574 silly fetch manifest lowercase-keys@^1.0.1
+575 silly fetch manifest mimic-response@^1.0.1
+576 silly fetch manifest p-cancelable@^1.0.0
+577 silly fetch manifest to-readable-stream@^1.0.0
+578 silly fetch manifest url-parse-lax@^3.0.0
+579 silly fetch manifest rc@1.2.8
+580 silly fetch manifest rc@^1.2.8
+581 http fetch GET 200 https://registry.npmjs.org/cacheable-request 52ms (cache revalidated)
+582 http fetch GET 200 https://registry.npmjs.org/to-readable-stream 52ms (cache miss)
+583 http fetch GET 200 https://registry.npmjs.org/p-cancelable 57ms (cache updated)
+584 http fetch GET 200 https://registry.npmjs.org/rc 56ms (cache miss)
+585 http fetch GET 200 https://registry.npmjs.org/lowercase-keys 60ms (cache revalidated)
+586 http fetch GET 200 https://registry.npmjs.org/get-stream 64ms (cache revalidated)
+587 http fetch GET 200 https://registry.npmjs.org/url-parse-lax 64ms (cache miss)
+588 http fetch GET 200 https://registry.npmjs.org/duplexer3 67ms (cache miss)
+589 http fetch GET 200 https://registry.npmjs.org/decompress-response 69ms (cache revalidated)
+590 http fetch GET 200 https://registry.npmjs.org/mimic-response 69ms (cache revalidated)
+591 http fetch GET 200 https://registry.npmjs.org/@szmarczak%2fhttp-timer 85ms (cache revalidated)
+592 http fetch GET 200 https://registry.npmjs.org/@sindresorhus%2fis 131ms (cache updated)
+593 timing idealTree:node_modules/json-server/node_modules/package-json Completed in 135ms
+594 silly placeDep node_modules/json-server @sindresorhus/is@0.14.0 OK for: got@9.6.0 want: ^0.14.0
+595 silly placeDep node_modules/json-server @szmarczak/http-timer@1.1.2 OK for: got@9.6.0 want: ^1.1.2
+596 silly placeDep node_modules/json-server cacheable-request@6.1.0 OK for: got@9.6.0 want: ^6.0.0
+597 silly placeDep node_modules/json-server decompress-response@3.3.0 OK for: got@9.6.0 want: ^3.3.0
+598 silly placeDep node_modules/json-server duplexer3@0.1.5 OK for: got@9.6.0 want: ^0.1.4
+599 silly placeDep node_modules/json-server get-stream@4.1.0 OK for: got@9.6.0 want: ^4.1.0
+600 silly placeDep node_modules/json-server lowercase-keys@1.0.1 OK for: got@9.6.0 want: ^1.0.1
+601 silly placeDep node_modules/json-server mimic-response@1.0.1 OK for: got@9.6.0 want: ^1.0.1
+602 silly placeDep node_modules/json-server p-cancelable@1.1.0 OK for: got@9.6.0 want: ^1.0.0
+603 silly placeDep node_modules/json-server to-readable-stream@1.0.0 OK for: got@9.6.0 want: ^1.0.0
+604 silly placeDep node_modules/json-server url-parse-lax@3.0.0 OK for: got@9.6.0 want: ^3.0.0
+605 silly fetch manifest defer-to-connect@^1.0.1
+606 silly fetch manifest clone-response@^1.0.2
+607 silly fetch manifest get-stream@^5.1.0
+608 silly fetch manifest http-cache-semantics@^4.0.0
+609 silly fetch manifest keyv@^3.0.0
+610 silly fetch manifest lowercase-keys@^2.0.0
+611 silly fetch manifest normalize-url@^4.1.0
+612 silly fetch manifest responselike@^1.0.2
+613 silly fetch manifest pump@^3.0.0
+614 silly fetch manifest prepend-http@^2.0.0
+615 http fetch GET 200 https://registry.npmjs.org/prepend-http 50ms (cache miss)
+616 http fetch GET 200 https://registry.npmjs.org/defer-to-connect 58ms (cache revalidated)
+617 http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 56ms (cache revalidated)
+618 http fetch GET 200 https://registry.npmjs.org/normalize-url 56ms (cache revalidated)
+619 http fetch GET 200 https://registry.npmjs.org/clone-response 61ms (cache updated)
+620 http fetch GET 200 https://registry.npmjs.org/keyv 59ms (cache updated)
+621 http fetch GET 200 https://registry.npmjs.org/pump 65ms (cache revalidated)
+622 http fetch GET 200 https://registry.npmjs.org/responselike 80ms (cache updated)
+623 timing idealTree:node_modules/json-server/node_modules/got Completed in 92ms
+624 timing idealTree:node_modules/json-server/node_modules/@sindresorhus/is Completed in 0ms
+625 silly placeDep node_modules/json-server defer-to-connect@1.1.3 OK for: @szmarczak/http-timer@1.1.2 want: ^1.0.1
+626 timing idealTree:node_modules/json-server/node_modules/@szmarczak/http-timer Completed in 0ms
+627 silly placeDep node_modules/json-server clone-response@1.0.3 OK for: cacheable-request@6.1.0 want: ^1.0.2
+628 silly placeDep node_modules/json-server/node_modules/cacheable-request get-stream@5.2.0 OK for: cacheable-request@6.1.0 want: ^5.1.0
+629 silly placeDep node_modules/json-server http-cache-semantics@4.1.0 OK for: cacheable-request@6.1.0 want: ^4.0.0
+630 silly placeDep node_modules/json-server keyv@3.1.0 OK for: cacheable-request@6.1.0 want: ^3.0.0
+631 silly placeDep node_modules/json-server/node_modules/cacheable-request lowercase-keys@2.0.0 OK for: cacheable-request@6.1.0 want: ^2.0.0
+632 silly placeDep node_modules/json-server normalize-url@4.5.1 OK for: cacheable-request@6.1.0 want: ^4.1.0
+633 silly placeDep node_modules/json-server responselike@1.0.2 OK for: cacheable-request@6.1.0 want: ^1.0.2
+634 silly fetch manifest json-buffer@3.0.0
+635 http fetch GET 200 https://registry.npmjs.org/json-buffer 55ms (cache revalidated)
+636 timing idealTree:node_modules/json-server/node_modules/cacheable-request Completed in 60ms
+637 timing idealTree:node_modules/json-server/node_modules/clone-response Completed in 0ms
+638 timing idealTree:node_modules/json-server/node_modules/decompress-response Completed in 0ms
+639 timing idealTree:node_modules/json-server/node_modules/defer-to-connect Completed in 0ms
+640 timing idealTree:node_modules/json-server/node_modules/duplexer3 Completed in 0ms
+641 silly placeDep node_modules/json-server pump@3.0.0 OK for: get-stream@4.1.0 want: ^3.0.0
+642 silly fetch manifest end-of-stream@^1.1.0
+643 silly fetch manifest once@^1.3.1
+644 http fetch GET 200 https://registry.npmjs.org/end-of-stream 45ms (cache revalidated)
+645 http fetch GET 200 https://registry.npmjs.org/once 47ms (cache revalidated)
+646 timing idealTree:node_modules/json-server/node_modules/get-stream Completed in 49ms
+647 timing idealTree:node_modules/json-server/node_modules/http-cache-semantics Completed in 0ms
+648 silly placeDep node_modules/json-server json-buffer@3.0.0 OK for: keyv@3.1.0 want: 3.0.0
+649 timing idealTree:node_modules/json-server/node_modules/keyv Completed in 1ms
+650 timing idealTree:node_modules/json-server/node_modules/json-buffer Completed in 0ms
+651 timing idealTree:node_modules/json-server/node_modules/lowercase-keys Completed in 0ms
+652 timing idealTree:node_modules/json-server/node_modules/mimic-response Completed in 0ms
+653 timing idealTree:node_modules/json-server/node_modules/normalize-url Completed in 0ms
+654 timing idealTree:node_modules/json-server/node_modules/p-cancelable Completed in 0ms
+655 silly placeDep node_modules/json-server end-of-stream@1.4.4 OK for: pump@3.0.0 want: ^1.1.0
+656 silly placeDep node_modules/json-server once@1.4.0 OK for: pump@3.0.0 want: ^1.3.1
+657 silly fetch manifest wrappy@1
+658 http fetch GET 200 https://registry.npmjs.org/wrappy 41ms (cache revalidated)
+659 timing idealTree:node_modules/json-server/node_modules/pump Completed in 43ms
+660 timing idealTree:node_modules/json-server/node_modules/end-of-stream Completed in 0ms
+661 silly placeDep node_modules/json-server wrappy@1.0.2 OK for: once@1.4.0 want: 1
+662 timing idealTree:node_modules/json-server/node_modules/once Completed in 5ms
+663 silly placeDep node_modules/json-server escape-goat@2.1.1 OK for: pupa@2.1.1 want: ^2.0.0
+664 timing idealTree:node_modules/json-server/node_modules/pupa Completed in 1ms
+665 timing idealTree:node_modules/json-server/node_modules/escape-goat Completed in 0ms
+666 silly placeDep node_modules/json-server rc@1.2.8 OK for: registry-auth-token@4.2.2 want: 1.2.8
+667 silly fetch manifest deep-extend@^0.6.0
+668 silly fetch manifest ini@~1.3.0
+669 silly fetch manifest minimist@^1.2.0
+670 silly fetch manifest strip-json-comments@~2.0.1
+671 http fetch GET 200 https://registry.npmjs.org/deep-extend 48ms (cache miss)
+672 http fetch GET 200 https://registry.npmjs.org/strip-json-comments 47ms (cache updated)
+673 http fetch GET 200 https://registry.npmjs.org/minimist 59ms (cache updated)
+674 timing idealTree:node_modules/json-server/node_modules/registry-auth-token Completed in 61ms
+675 silly placeDep node_modules/json-server deep-extend@0.6.0 OK for: rc@1.2.8 want: ^0.6.0
+676 silly placeDep node_modules/json-server/node_modules/rc ini@1.3.8 OK for: rc@1.2.8 want: ~1.3.0
+677 silly placeDep node_modules/json-server minimist@1.2.6 OK for: rc@1.2.8 want: ^1.2.0
+678 silly placeDep node_modules/json-server strip-json-comments@2.0.1 OK for: rc@1.2.8 want: ~2.0.1
+679 timing idealTree:node_modules/json-server/node_modules/rc Completed in 2ms
+680 timing idealTree:node_modules/json-server/node_modules/deep-extend Completed in 0ms
+681 timing idealTree:node_modules/json-server/node_modules/minimist Completed in 0ms
+682 timing idealTree:node_modules/json-server/node_modules/registry-url Completed in 0ms
+683 timing idealTree:node_modules/json-server/node_modules/responselike Completed in 0ms
+684 silly placeDep node_modules/json-server lru-cache@6.0.0 OK for: semver@7.3.7 want: ^6.0.0
+685 silly fetch manifest yallist@^4.0.0
+686 http fetch GET 200 https://registry.npmjs.org/yallist 61ms (cache revalidated)
+687 timing idealTree:node_modules/json-server/node_modules/semver Completed in 62ms
+688 silly placeDep node_modules/json-server yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+689 timing idealTree:node_modules/json-server/node_modules/lru-cache Completed in 0ms
+690 silly placeDep node_modules/json-server/node_modules/semver-diff semver@6.3.0 OK for: semver-diff@3.1.1 want: ^6.3.0
+691 timing idealTree:node_modules/json-server/node_modules/semver-diff Completed in 1ms
+692 silly placeDep node_modules/json-server emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+693 silly placeDep node_modules/json-server is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+694 silly placeDep node_modules/json-server strip-ansi@6.0.1 OK for: string-width@4.2.3 want: ^6.0.1
+695 silly fetch manifest ansi-regex@^5.0.1
+696 http fetch GET 200 https://registry.npmjs.org/ansi-regex 55ms (cache revalidated)
+697 timing idealTree:node_modules/json-server/node_modules/string-width Completed in 61ms
+698 timing idealTree:node_modules/json-server/node_modules/emoji-regex Completed in 0ms
+699 timing idealTree:node_modules/json-server/node_modules/is-fullwidth-code-point Completed in 0ms
+700 silly placeDep node_modules/json-server ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+701 timing idealTree:node_modules/json-server/node_modules/strip-ansi Completed in 1ms
+702 timing idealTree:node_modules/json-server/node_modules/ansi-regex Completed in 0ms
+703 timing idealTree:node_modules/json-server/node_modules/strip-json-comments Completed in 0ms
+704 timing idealTree:node_modules/json-server/node_modules/to-readable-stream Completed in 0ms
+705 timing idealTree:node_modules/json-server/node_modules/type-fest Completed in 0ms
+706 silly placeDep node_modules/json-server crypto-random-string@2.0.0 OK for: unique-string@2.0.0 want: ^2.0.0
+707 timing idealTree:node_modules/json-server/node_modules/unique-string Completed in 1ms
+708 timing idealTree:node_modules/json-server/node_modules/crypto-random-string Completed in 0ms
+709 silly placeDep node_modules/json-server prepend-http@2.0.0 OK for: url-parse-lax@3.0.0 want: ^2.0.0
+710 timing idealTree:node_modules/json-server/node_modules/url-parse-lax Completed in 1ms
+711 timing idealTree:node_modules/json-server/node_modules/prepend-http Completed in 0ms
+712 timing idealTree:node_modules/json-server/node_modules/utils-merge Completed in 0ms
+713 timing idealTree:node_modules/json-server/node_modules/vary Completed in 0ms
+714 timing idealTree:node_modules/json-server/node_modules/widest-line Completed in 0ms
+715 timing idealTree:node_modules/json-server/node_modules/wrap-ansi Completed in 0ms
+716 timing idealTree:node_modules/json-server/node_modules/wrappy Completed in 0ms
+717 silly placeDep node_modules/json-server imurmurhash@0.1.4 OK for: write-file-atomic@3.0.3 want: ^0.1.4
+718 silly placeDep node_modules/json-server is-typedarray@1.0.0 OK for: write-file-atomic@3.0.3 want: ^1.0.0
+719 silly placeDep node_modules/json-server signal-exit@3.0.7 OK for: write-file-atomic@3.0.3 want: ^3.0.2
+720 silly placeDep node_modules/json-server typedarray-to-buffer@3.1.5 OK for: write-file-atomic@3.0.3 want: ^3.1.5
+721 timing idealTree:node_modules/json-server/node_modules/write-file-atomic Completed in 2ms
+722 timing idealTree:node_modules/json-server/node_modules/imurmurhash Completed in 0ms
+723 timing idealTree:node_modules/json-server/node_modules/is-typedarray Completed in 0ms
+724 timing idealTree:node_modules/json-server/node_modules/signal-exit Completed in 0ms
+725 timing idealTree:node_modules/json-server/node_modules/typedarray-to-buffer Completed in 0ms
+726 timing idealTree:node_modules/json-server/node_modules/xdg-basedir Completed in 0ms
+727 timing idealTree:node_modules/json-server/node_modules/yallist Completed in 0ms
+728 silly placeDep node_modules/json-server cliui@7.0.4 OK for: yargs@17.5.1 want: ^7.0.2
+729 silly placeDep node_modules/json-server escalade@3.1.1 OK for: yargs@17.5.1 want: ^3.1.1
+730 silly placeDep node_modules/json-server get-caller-file@2.0.5 OK for: yargs@17.5.1 want: ^2.0.5
+731 silly placeDep node_modules/json-server require-directory@2.1.1 OK for: yargs@17.5.1 want: ^2.1.1
+732 silly placeDep node_modules/json-server y18n@5.0.8 OK for: yargs@17.5.1 want: ^5.0.5
+733 silly placeDep node_modules/json-server yargs-parser@21.1.1 OK for: yargs@17.5.1 want: ^21.0.0
+734 timing idealTree:node_modules/json-server/node_modules/yargs Completed in 4ms
+735 timing idealTree:node_modules/json-server/node_modules/cliui Completed in 0ms
+736 timing idealTree:node_modules/json-server/node_modules/escalade Completed in 0ms
+737 timing idealTree:node_modules/json-server/node_modules/get-caller-file Completed in 0ms
+738 timing idealTree:node_modules/json-server/node_modules/require-directory Completed in 0ms
+739 timing idealTree:node_modules/json-server/node_modules/y18n Completed in 0ms
+740 timing idealTree:node_modules/json-server/node_modules/yargs-parser Completed in 0ms
+741 timing idealTree:node_modules/json-server/node_modules/cacheable-request/node_modules/get-stream Completed in 0ms
+742 timing idealTree:node_modules/json-server/node_modules/cacheable-request/node_modules/lowercase-keys Completed in 1ms
+743 timing idealTree:node_modules/json-server/node_modules/compression/node_modules/bytes Completed in 0ms
+744 timing idealTree:node_modules/json-server/node_modules/content-disposition/node_modules/safe-buffer Completed in 0ms
+745 silly placeDep node_modules/json-server isarray@0.0.1 OK for: path-to-regexp@1.8.0 want: 0.0.1
+746 timing idealTree:node_modules/json-server/node_modules/express-urlrewrite/node_modules/path-to-regexp Completed in 0ms
+747 timing idealTree:node_modules/json-server/node_modules/isarray Completed in 0ms
+748 timing idealTree:node_modules/json-server/node_modules/express/node_modules/safe-buffer Completed in 0ms
+749 timing idealTree:node_modules/json-server/node_modules/make-dir/node_modules/semver Completed in 0ms
+750 timing idealTree:node_modules/json-server/node_modules/method-override/node_modules/debug Completed in 0ms
+751 timing idealTree:node_modules/json-server/node_modules/morgan/node_modules/on-finished Completed in 0ms
+752 timing idealTree:node_modules/json-server/node_modules/package-json/node_modules/semver Completed in 0ms
+753 timing idealTree:node_modules/json-server/node_modules/rc/node_modules/ini Completed in 0ms
+754 timing idealTree:node_modules/json-server/node_modules/semver-diff/node_modules/semver Completed in 0ms
+755 timing idealTree:node_modules/json-server/node_modules/send/node_modules/ms Completed in 0ms
+756 timing idealTree:buildDeps Completed in 2413ms
+757 timing idealTree:fixDepFlags Completed in 2ms
+758 timing idealTree Completed in 2424ms
+759 timing reify:loadTrees Completed in 2428ms
+760 timing reify:diffTrees Completed in 4ms
+761 silly reify moves {}
+762 timing reify:retireShallow Completed in 0ms
+763 timing reify:rollback:createSparse Completed in 1ms
+764 timing reify:rollback:retireShallow Completed in 0ms
+765 timing command:install Completed in 2475ms
+766 verbose stack Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs\node_modules\json-server'
+767 verbose cwd C:\Users\andre
+768 verbose Windows_NT 10.0.19044
+769 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "json-server"
+770 verbose node v16.13.2
+771 verbose npm  v8.1.2
+772 error code EPERM
+773 error syscall mkdir
+774 error path C:\Program Files\nodejs\node_modules\json-server
+775 error errno -4048
+776 error Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs\node_modules\json-server'
+776 error  [Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs\node_modules\json-server'] {
+776 error   errno: -4048,
+776 error   code: 'EPERM',
+776 error   syscall: 'mkdir',
+776 error   path: 'C:\\Program Files\\nodejs\\node_modules\\json-server'
+776 error }
+777 error The operation was rejected by your operating system.
+777 error It's possible that the file was already in use (by a text editor or antivirus),
+777 error or that you lack permissions to access it.
+777 error
+777 error If you believe this might be a permissions issue, please double-check the
+777 error permissions of the file and its containing directories, or try running
+777 error the command again as root/Administrator.
+778 verbose exit -4048
