@@ -1,0 +1,130 @@
+# npm resolution error report
+
+2022-08-27T04:30:39.983Z
+
+While resolving: nucampsite@1.0.0
+Found: react@18.0.0
+node_modules/react
+  react@"18.0.0" from the root project
+  peer react@"^17.0.2 || ^18.0.0" from react-native-web@0.18.8
+  node_modules/react-native-web
+    react-native-web@"~0.18.7" from the root project
+
+Could not resolve dependency:
+peer react@"^18.2.0" from react-dom@18.2.0
+node_modules/react-dom
+  peer react-dom@"^17.0.2 || ^18.0.0" from react-native-web@0.18.8
+  node_modules/react-native-web
+    react-native-web@"~0.18.7" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "current": {
+    "name": "react",
+    "version": "18.0.0",
+    "whileInstalling": {
+      "name": "nucampsite",
+      "version": "1.0.0",
+      "path": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+    },
+    "location": "node_modules/react",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "react",
+        "spec": "18.0.0",
+        "from": {
+          "location": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+        }
+      },
+      {
+        "type": "peer",
+        "name": "react",
+        "spec": "^17.0.2 || ^18.0.0",
+        "from": {
+          "name": "react-native-web",
+          "version": "0.18.8",
+          "whileInstalling": {
+            "name": "nucampsite",
+            "version": "1.0.0",
+            "path": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+          },
+          "location": "node_modules/react-native-web",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "react-native-web",
+              "spec": "~0.18.7",
+              "from": {
+                "location": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "currentEdge": {
+    "type": "prod",
+    "name": "react",
+    "spec": "18.0.0",
+    "from": {
+      "location": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+    }
+  },
+  "edge": {
+    "type": "peer",
+    "name": "react",
+    "spec": "^18.2.0",
+    "error": "INVALID",
+    "from": {
+      "name": "react-dom",
+      "version": "18.2.0",
+      "whileInstalling": {
+        "name": "nucampsite",
+        "version": "1.0.0",
+        "path": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+      },
+      "location": "node_modules/react-dom",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "peer",
+          "name": "react-dom",
+          "spec": "^17.0.2 || ^18.0.0",
+          "from": {
+            "name": "react-native-web",
+            "version": "0.18.8",
+            "whileInstalling": {
+              "name": "nucampsite",
+              "version": "1.0.0",
+              "path": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+            },
+            "location": "node_modules/react-native-web",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "react-native-web",
+                "spec": "~0.18.7",
+                "from": {
+                  "location": "C:\\Users\\andre\\Documents\\GitHub\\NuCamp\\4-React-Native\\nucampsite"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false
+}
